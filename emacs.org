@@ -1,0 +1,123 @@
+#+TITLE: Emacs: your life in plain text
+#+AUTHOR: Christophe Rhodes
+#+EMAIL: c.rhodes@gold.ac.uk / @ascii19
+#+EPRESENT_FRAME_LEVEL: 2
+
+* Introduction
+** Quick quiz
+   What tool(s) do you use for:
+   - editing code?
+   - editing configuration files / system admin?
+   - editing e-mails?
+   - editing tweets / facebook / blog posts?
+   - keeping track of personal finances?
+   - managing your calendar, todo lists?
+   - taking notes?
+   - preparing presentations?
+** Emacs
+   An editor?  Or a way of life?
+
+   - “your life in plain text”
+   - not just for programming:
+     * system administration
+     * e-mail
+     * social networking
+     * personal finances
+     * multimedia client
+     * todo list manager, outliner, scheduler...
+     * ... presentation software
+** About me
+   Lecturer at Goldsmiths
+
+   - Physicist, Mathematician
+   - Software Developer
+   - Entrepreneur
+   - Musician
+
+   c.rhodes@gold.ac.uk / @ascii19
+* Emacs
+** Editing text
+   1. simple editing
+#+begin_src emacs-lisp
+  (split-window-below)
+  (switch-to-buffer-other-window (get-buffer-create "*simple-editing*"))
+#+end_src
+
+   2. keyboard macros
+
+   3. isearch, C-M-%
+** Editing program text
+   1. modes for everything
+   2. evaluation!
+** What's a “program”, anyway?
+   - typesetting files?
+#+begin_src latex :file "/tmp/latex-logo.png"
+  \LaTeX
+#+end_src
+
+   - finances
+#+begin_src ledger :cmdline -M reg Expenses
+  2014/09/26 Goldsmiths refectory
+      Expenses:Lunch  £5.00
+      Assets:Bank account
+
+  2014/10/03 Goldsmiths refectory
+      Expenses:Lunch  £4.50
+      Assets:Bank account
+
+  2014/10/10 Goldsmiths refectory
+      Expenses:Lunch  £4.50
+      Assets:Bank account
+#+end_src
+
+#+RESULTS:
+: 14-Sep-01 - 14-Sep-30           Expenses:Lunch                £5.00        £5.00
+: 14-Oct-01 - 14-Oct-31           Expenses:Lunch                £9.00       £14.00
+
+** Programmable editor
+   - ace-jump-mode
+   - multiple-cursors
+   - crosshairs
+   - <other crazy editing techniques>
+** Programmable editor, II
+   - games!
+#+begin_src emacs-lisp
+  (tetris)
+  (snake)
+  (2048-game)
+#+end_src
+** Programmable editor, III
+   users implement new features:
+
+   - style checkers
+#+begin_src emacs-lisp
+  (execute-kbd-macro (kbd "M-x writegood-mode RET"))
+#+end_src
+
+   - version-control front-ends
+#+begin_src emacs-lisp
+  (magit-status ".")
+#+end_src
+
+   - twitter clients
+#+begin_src emacs-lisp
+  (switch-to-buffer (get-buffer ":home"))
+#+end_src
+* And there’s more
+** Documented
+   Emacs has documentation:
+
+   - Tutorial (C-h t) (help-with-tutorial)
+   - Manual (C-h i m emacs RET)
+   - Keystrokes (C-h c, C-h k, C-h w)
+   - Functions, variables (C-h f, C-h v)
+   - Programmers’ manual (C-h i m elisp RET)
+* Endmatter
+** Conclusions
+   - extremely customizable
+   - not rocket science
+   - clearly the best editor in the world
+** Where to go for more
+   - http://planet.emacsen.org
+   - EmacsRocks (@emacsrocks)
+   - http://reddit.com/r/emacs
