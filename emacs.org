@@ -118,6 +118,10 @@
    - not rocket science
    - clearly the best editor in the world
 ** Where to go for more
+   text:
    - http://planet.emacsen.org
-   - EmacsRocks (@emacsrocks)
    - http://reddit.com/r/emacs
+
+   audio/video:
+   - EmacsRocks (@emacsrocks)
+   - http://sachachua.com/blog/tag/emacs-chat/
