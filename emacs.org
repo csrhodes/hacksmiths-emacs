@@ -77,13 +77,14 @@
       Assets:Bank account
 #+end_src
 
-#+RESULTS:
-: 14-Sep-01 - 14-Sep-30           Expenses:Lunch                £5.00        £5.00
-: 14-Oct-01 - 14-Oct-31           Expenses:Lunch                £9.00       £14.00
-
+   - music
+     https://www.youtube.com/watch?v=zZ6U80hnQoA
 ** Programmable editor
    - ace-jump-mode
    - multiple-cursors
+     + 1
+     + 2
+     + 3
    - crosshairs
    - <other crazy editing techniques>
 ** Programmable editor, II
