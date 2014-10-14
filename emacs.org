@@ -14,6 +14,13 @@
    - managing your calendar, todo lists?
    - taking notes?
    - preparing presentations?
+** Second quick quiz
+   How confident are you that the tool you’re using will be around in
+   10 years’ time?
+** GNU
+   - printer drivers
+   - capturing public research
+   - moral dimension of software / computing
 ** Emacs
    An editor?  Or a way of life?
 
