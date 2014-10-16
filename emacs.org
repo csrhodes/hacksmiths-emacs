@@ -2,6 +2,7 @@
 #+AUTHOR: Christophe Rhodes
 #+EMAIL: c.rhodes@gold.ac.uk / @ascii19
 #+EPRESENT_FRAME_LEVEL: 2
+#+OPTIONS: H:2
 
 * Introduction
 ** Quick quiz
@@ -21,6 +22,10 @@
    - printer drivers
    - capturing public research
    - moral dimension of software / computing
+   but also:
+   - public commons
+   - apprenticeship / learning craft
+   - community membership
 ** Emacs
    An editor?  Or a way of life?
 
@@ -58,12 +63,12 @@
    2. evaluation!
 ** What's a “program”, anyway?
    - typesetting files?
-#+begin_src latex :file "/tmp/latex-logo.png"
+#+begin_src latex :file "/tmp/latex-logo.pdf"
   \LaTeX
 #+end_src
 
    - finances
-#+begin_src ledger :cmdline -M reg Expenses
+#+begin_src ledger :cmdline -M reg Expenses :exports both
   2014/09/26 Goldsmiths refectory
       Expenses:Lunch  £5.00
       Assets:Bank account
@@ -80,12 +85,12 @@
    - music
      https://www.youtube.com/watch?v=zZ6U80hnQoA
 ** Programmable editor
+   - crosshairs
    - ace-jump-mode
    - multiple-cursors
      + 1
      + 2
      + 3
-   - crosshairs
    - <other crazy editing techniques>
 ** Programmable editor, II
    - games!
@@ -106,25 +111,48 @@
 #+begin_src emacs-lisp
   (magit-status ".")
 #+end_src
-
+   ... and whole new applications:
    - twitter clients
 #+begin_src emacs-lisp
   (switch-to-buffer (get-buffer ":home"))
 #+end_src
+   - note takers and personal organizers
+     | feature  | emacs | other editors |
+     |----------+-------+---------------|
+     | org-mode | ✓     |               |
+
 * And there’s more
 ** Documented
    Emacs has documentation:
 
-   - Tutorial (C-h t) (help-with-tutorial)
-   - Manual (C-h i m emacs RET)
+   - Tutorial (execute-kbd-macro (kbd "C-h t")) (help-with-tutorial)
+   - Manual (execute-kbd-macro (kbd "C-h i d m emacs RET"))
    - Keystrokes (C-h c, C-h k, C-h w)
    - Functions, variables (C-h f, C-h v)
-   - Programmers’ manual (C-h i m elisp RET)
+** Customizable
+   Emacs is customizable
+
+   - (Almost) all functionality implemented in emacs Lisp
+   - (Almost) all functionality directly available at any time
+     * initialization file: [[file:~/.emacs.d/init.el]]
+     * minibuffer: M-: =eval-expression=
+     * almost anywhere: C-x C-e =eval-last-sexp=
+     * =*scratch*= buffer: lisp interaction
+     * ielm: lisp Read-Eval-Print loop (ielm)
+   - (Much) functionality is hookable
+   - Lisp functions can be advised
+   - Programmers’ manual (execute-kbd-macro (kbd "C-h i d m elisp RET"))
 * Endmatter
 ** Conclusions
    - extremely customizable
    - not rocket science
    - clearly the best editor in the world
+
+   Emacs:
+   - “a nice operating system; it could do with a better text editor”
+   - ... but actually its text editor is pretty nice ...
+   - ... and even if you don’t like it, you can change it all until
+     you do.
 ** Where to go for more
    text:
    - http://planet.emacsen.org
