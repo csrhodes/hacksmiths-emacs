@@ -63,9 +63,14 @@
    2. evaluation!
 ** What's a “program”, anyway?
    - typesetting files?
-#+begin_src latex :file "/tmp/latex-logo.pdf"
+#+begin_src latex :file "/tmp/latex-logo.png"
   \LaTeX
 #+end_src
+
+#+RESULTS:
+#+BEGIN_LaTeX
+[[file:/tmp/latex-logo.png]]
+#+END_LaTeX
 
    - finances
 #+begin_src ledger :cmdline -M reg Expenses :exports both
@@ -82,15 +87,19 @@
       Assets:Bank account
 #+end_src
 
+#+RESULTS:
+: 14-Sep-01 - 14-Sep-30           Expenses:Lunch                £5.00        £5.00
+: 14-Oct-01 - 14-Oct-31           Expenses:Lunch                £9.00       £14.00
+
    - music
      https://www.youtube.com/watch?v=zZ6U80hnQoA
 ** Programmable editor
    - crosshairs
    - ace-jump-mode
    - multiple-cursors
-     + 1
-     + 2
-     + 3
+     + 1st line
+     + 2st line
+     + 3st line
    - <other crazy editing techniques>
 ** Programmable editor, II
    - games!
@@ -156,8 +165,13 @@
 ** Where to go for more
    text:
    - http://planet.emacsen.org
+   - https://plus.google.com/communities/114815898697665598016
    - http://reddit.com/r/emacs
 
    audio/video:
    - EmacsRocks (@emacsrocks)
    - http://sachachua.com/blog/tag/emacs-chat/
+* COMMENT
+  Local variables:
+  eval: (set (make-local-variable 'org-confirm-babel-evaluate) nil)
+  End:
