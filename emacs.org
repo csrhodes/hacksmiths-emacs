@@ -126,9 +126,10 @@
   (switch-to-buffer (get-buffer ":home"))
 #+end_src
    - note takers and personal organizers
-     | feature  | emacs | other editors |
-     |----------+-------+---------------|
-     | org-mode | ✓     |               |
+     | feature  | emacs | other editors       |
+     |----------+-------+---------------------|
+     | org-mode | ✓     | android/iOS variant |
+     | twitter  | ✓     |                     |
 
 * And there’s more
 ** Documented
