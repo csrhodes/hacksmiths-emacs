@@ -168,6 +168,7 @@
    - http://planet.emacsen.org
    - https://plus.google.com/communities/114815898697665598016
    - http://reddit.com/r/emacs
+   - http://emacs.stackexchange.com/
 
    audio/video:
    - EmacsRocks (@emacsrocks)
