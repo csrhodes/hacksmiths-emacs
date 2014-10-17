@@ -26,6 +26,15 @@
    - public commons
    - apprenticeship / learning craft
    - community membership
+** About me
+   Lecturer at Goldsmiths
+
+   - Physicist, Mathematician
+   - Software Developer
+   - Entrepreneur
+   - Musician
+
+   c.rhodes@gold.ac.uk / @ascii19
 ** Emacs
    An editor?  Or a way of life?
 
@@ -38,15 +47,6 @@
      * multimedia client
      * todo list manager, outliner, scheduler...
      * ... presentation software
-** About me
-   Lecturer at Goldsmiths
-
-   - Physicist, Mathematician
-   - Software Developer
-   - Entrepreneur
-   - Musician
-
-   c.rhodes@gold.ac.uk / @ascii19
 * Emacs
 ** Editing text
    1. simple editing
